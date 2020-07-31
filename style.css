@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('img/background.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.logo img {
+    width: 300px;
+    opacity: .7;
+}
+
+.list {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
+
+.list h1 {
+    color: rgb(255, 255, 255);
+}
+
+.accordionWrapper {
+    padding: 30px;
+    background: #fff;
+    opacity: .8;
+    width: 50%;
+    margin: 1rem auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+}
+
+.accordionItemHeading {
+    cursor: pointer;
+    margin: 1rem auto;
+    padding-left: 1rem;
+    background: #2980b9;
+    width: 70%;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.close .accordionItemContent {
+    height: 0;
+    visibility: hidden;
+}
+
+.open .accordionItemContent {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    letter-spacing: 0;
+}
+
+.open .accordionItemHeading {
+    margin: 1rem auto  auto;
+    background-color: #333;
+    color: #fff;
+}
+
+/** ===================================================== **/
+/** RESPONSIVE PAGES **/
+/** ===================================================== **/
+    @media screen and (max-width: 1440px) {
+        .accordionWrapper{
+            padding: 10px;
+        }
+        .list h1 {
+            font-size: 40px;
+        }
+        .accordionItemHeading {
+            font-size: 25px;
+            margin: .5rem auto;
+        }
+        .open .accordionItemContent {
+            font-size: 25px;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .accordionWrapper{
+            width: 80%;
+        }
+        .accordionItemHeading {
+            width: 60%;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .accordionWrapper{
+            width: 90%;
+            border-radius: 10px;
+        }
+        .accordionItemHeading {
+            width: 70%;
+            letter-spacing: 3px;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        .logo img {
+            width: 200px;
+        }
+        .list h1 {
+            font-size: 35px;
+        }
+        .accordionWrapper{
+            width: 95%;
+            border-radius: 5px;
+        }
+        .accordionItemHeading {
+            width: 90%;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        .open .accordionItemContent {
+            font-size: 20px;
+        }
+    }
+/** ===================================================== **/
+/** END RESPONSIVE PAGES **/
+/** ===================================================== **/
